@@ -1,0 +1,17 @@
+# コンパイル済みのクラスファイル
+*.class
+
+# Maven のビルド出力ディレクトリ
+target/
+
+# Gradle のビルド出力ディレクトリ
+build/
+bin/
+
+# IDE（エディタ）の設定ファイル（共有しない方が良いもの）
+.settings/
+.classpath
+.project
+.idea/
+*.iml
+.vscode/
