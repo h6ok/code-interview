@@ -1,4 +1,4 @@
-package com.codeinterview.selectionsort;
+package com.codeinterview.sort;
 
 public class SelectionSort {
 

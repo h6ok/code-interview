@@ -1,4 +1,4 @@
-package com.codeinteview.twopointers;
+package com.codeinterview.array;
 
 public class TwoPointers {
 

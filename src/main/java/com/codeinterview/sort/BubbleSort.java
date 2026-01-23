@@ -1,4 +1,4 @@
-package com.codeinterview.bubblesort;
+package com.codeinterview.sort;
 
 public class BubbleSort {
 

@@ -1,13 +1,11 @@
-package com.codeinterview.mergesorttest;
+package com.codeinterview.sort;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import com.codeinterview.mergesort.MergeSort;
-
-class MergeSortTest {
+class SelectionSortTest {
 
     @Test
     @DisplayName("正常系：バラバラな順序の配列が昇順にソートされること")
@@ -15,7 +13,7 @@ class MergeSortTest {
         int[] input = { 5, 3, 8, 4, 2 };
         int[] expected = { 2, 3, 4, 5, 8 };
 
-        int[] result = MergeSort.Solution(input);
+        int[] result = SelectionSort.Solution(input);
 
         assertArrayEquals(expected, result, "標準的なソートが正しく行われる必要があります");
     }
@@ -26,7 +24,7 @@ class MergeSortTest {
         int[] input = { 1, 2, 3, 4, 5 };
         int[] expected = { 1, 2, 3, 4, 5 };
 
-        assertArrayEquals(expected, MergeSort.Solution(input));
+        assertArrayEquals(expected, SelectionSort.Solution(input));
     }
 
     @Test
@@ -35,7 +33,7 @@ class MergeSortTest {
         int[] input = { 5, 4, 3, 2, 1 };
         int[] expected = { 1, 2, 3, 4, 5 };
 
-        assertArrayEquals(expected, MergeSort.Solution(input));
+        assertArrayEquals(expected, SelectionSort.Solution(input));
     }
 
     @Test
@@ -44,7 +42,7 @@ class MergeSortTest {
         int[] input = { 3, 1, 2, 1, 3 };
         int[] expected = { 1, 1, 2, 3, 3 };
 
-        assertArrayEquals(expected, MergeSort.Solution(input));
+        assertArrayEquals(expected, SelectionSort.Solution(input));
     }
 
     @Test
@@ -53,7 +51,7 @@ class MergeSortTest {
         int[] input = { 10 };
         int[] expected = { 10 };
 
-        assertArrayEquals(expected, MergeSort.Solution(input));
+        assertArrayEquals(expected, SelectionSort.Solution(input));
     }
 
     @Test
@@ -62,6 +60,6 @@ class MergeSortTest {
         int[] input = {};
         int[] expected = {};
 
-        assertArrayEquals(expected, MergeSort.Solution(input));
+        assertArrayEquals(expected, SelectionSort.Solution(input));
     }
 }

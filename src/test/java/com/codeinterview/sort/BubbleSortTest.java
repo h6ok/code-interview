@@ -1,11 +1,9 @@
-package com.codeinterview.bubblesorttest;
+package com.codeinterview.sort;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
-import com.codeinterview.bubblesort.BubbleSort;
 
 class BubbleSortTest {
 

@@ -1,4 +1,4 @@
-package com.codeinterview.array.removeduplicates;
+package com.codeinterview.array;
 
 /**
  * Given an integer array nums sorted in non-decreasing order, remove the

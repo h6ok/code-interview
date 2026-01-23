@@ -1,4 +1,4 @@
-package com.codeinterview.mergesort;
+package com.codeinterview.sort;
 
 import java.util.Arrays;
 

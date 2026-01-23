@@ -1,11 +1,9 @@
-package com.codeinterview.array.sellstocktest;
+package com.codeinterview.array;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
-import com.codeinterview.array.sellstock.SellStock;
 
 class SellStockTest {
 

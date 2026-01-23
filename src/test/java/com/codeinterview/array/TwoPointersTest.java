@@ -1,12 +1,10 @@
-package com.codeinterview.twopointerstest;
+package com.codeinterview.array;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
-import com.codeinteview.twopointers.TwoPointers;
 
 class TwoPointersTest {
 

@@ -1,4 +1,4 @@
-package com.codeinterview.array.rotatearray;
+package com.codeinterview.array;
 
 import java.util.Arrays;
 

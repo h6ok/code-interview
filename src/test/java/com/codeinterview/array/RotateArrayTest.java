@@ -1,11 +1,9 @@
-package com.codeinterview.array.rotatearraytest;
+package com.codeinterview.array;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
-import com.codeinterview.array.rotatearray.RotateArray;
 
 class RotateArrayTest {
 

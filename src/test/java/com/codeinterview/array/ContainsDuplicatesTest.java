@@ -1,10 +1,10 @@
-package com.codeinterview.array.containsduplicatestest;
+package com.codeinterview.array;
 
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import org.junit.jupiter.api.DisplayName;
-import static org.junit.jupiter.api.Assertions.*;
-
-import com.codeinterview.array.containsduplicates.ContainsDuplicates;
+import org.junit.jupiter.api.Test;
 
 class ContainsDuplicatesTest {
 
