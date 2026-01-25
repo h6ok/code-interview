@@ -13,7 +13,7 @@ class SelectionSortTest {
         int[] input = { 5, 3, 8, 4, 2 };
         int[] expected = { 2, 3, 4, 5, 8 };
 
-        int[] result = SelectionSort.Solution(input);
+        int[] result = SelectionSort.solution(input);
 
         assertArrayEquals(expected, result, "標準的なソートが正しく行われる必要があります");
     }
@@ -24,7 +24,7 @@ class SelectionSortTest {
         int[] input = { 1, 2, 3, 4, 5 };
         int[] expected = { 1, 2, 3, 4, 5 };
 
-        assertArrayEquals(expected, SelectionSort.Solution(input));
+        assertArrayEquals(expected, SelectionSort.solution(input));
     }
 
     @Test
@@ -33,7 +33,7 @@ class SelectionSortTest {
         int[] input = { 5, 4, 3, 2, 1 };
         int[] expected = { 1, 2, 3, 4, 5 };
 
-        assertArrayEquals(expected, SelectionSort.Solution(input));
+        assertArrayEquals(expected, SelectionSort.solution(input));
     }
 
     @Test
@@ -42,7 +42,7 @@ class SelectionSortTest {
         int[] input = { 3, 1, 2, 1, 3 };
         int[] expected = { 1, 1, 2, 3, 3 };
 
-        assertArrayEquals(expected, SelectionSort.Solution(input));
+        assertArrayEquals(expected, SelectionSort.solution(input));
     }
 
     @Test
@@ -51,7 +51,7 @@ class SelectionSortTest {
         int[] input = { 10 };
         int[] expected = { 10 };
 
-        assertArrayEquals(expected, SelectionSort.Solution(input));
+        assertArrayEquals(expected, SelectionSort.solution(input));
     }
 
     @Test
@@ -60,6 +60,6 @@ class SelectionSortTest {
         int[] input = {};
         int[] expected = {};
 
-        assertArrayEquals(expected, SelectionSort.Solution(input));
+        assertArrayEquals(expected, SelectionSort.solution(input));
     }
 }

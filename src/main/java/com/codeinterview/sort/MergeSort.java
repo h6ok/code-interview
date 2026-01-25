@@ -4,13 +4,13 @@ import java.util.Arrays;
 
 public class MergeSort {
 
-    public static int[] Solution(int[] arr) {
+    public static int[] solution(int[] arr) {
         if (arr.length <= 1) {
             return arr;
         }
 
-        int[] left = Solution(Arrays.copyOfRange(arr, 0, arr.length / 2));
-        int[] right = Solution(Arrays.copyOfRange(arr, arr.length / 2, arr.length));
+        int[] left = solution(Arrays.copyOfRange(arr, 0, arr.length / 2));
+        int[] right = solution(Arrays.copyOfRange(arr, arr.length / 2, arr.length));
 
         int capacity = left.length + right.length;
         int[] mergedArray = new int[capacity];

@@ -13,7 +13,7 @@ class BubbleSortTest {
         int[] input = { 5, 3, 8, 4, 2 };
         int[] expected = { 2, 3, 4, 5, 8 };
 
-        int[] result = BubbleSort.Solution(input);
+        int[] result = BubbleSort.solution(input);
 
         assertArrayEquals(expected, result, "標準的なソートが正しく行われる必要があります");
     }
@@ -24,7 +24,7 @@ class BubbleSortTest {
         int[] input = { 1, 2, 3, 4, 5 };
         int[] expected = { 1, 2, 3, 4, 5 };
 
-        assertArrayEquals(expected, BubbleSort.Solution(input));
+        assertArrayEquals(expected, BubbleSort.solution(input));
     }
 
     @Test
@@ -33,7 +33,7 @@ class BubbleSortTest {
         int[] input = { 5, 4, 3, 2, 1 };
         int[] expected = { 1, 2, 3, 4, 5 };
 
-        assertArrayEquals(expected, BubbleSort.Solution(input));
+        assertArrayEquals(expected, BubbleSort.solution(input));
     }
 
     @Test
@@ -42,7 +42,7 @@ class BubbleSortTest {
         int[] input = { 3, 1, 2, 1, 3 };
         int[] expected = { 1, 1, 2, 3, 3 };
 
-        assertArrayEquals(expected, BubbleSort.Solution(input));
+        assertArrayEquals(expected, BubbleSort.solution(input));
     }
 
     @Test
@@ -51,7 +51,7 @@ class BubbleSortTest {
         int[] input = { 10 };
         int[] expected = { 10 };
 
-        assertArrayEquals(expected, BubbleSort.Solution(input));
+        assertArrayEquals(expected, BubbleSort.solution(input));
     }
 
     @Test
@@ -60,6 +60,6 @@ class BubbleSortTest {
         int[] input = {};
         int[] expected = {};
 
-        assertArrayEquals(expected, BubbleSort.Solution(input));
+        assertArrayEquals(expected, BubbleSort.solution(input));
     }
 }

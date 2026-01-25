@@ -9,7 +9,7 @@ package com.codeinterview.string;
  */
 public class ReverseString {
 
-    public static void Solution(char[] s) {
+    public static void solution(char[] s) {
         int start = 0;
         int end = s.length - 1;
 

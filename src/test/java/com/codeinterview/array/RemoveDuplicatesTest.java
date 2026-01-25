@@ -13,7 +13,7 @@ class RemoveDuplicatesTest {
         int[] nums = { 1, 1, 2 };
         int[] expectedNums = { 1, 2 };
 
-        int k = RemoveDuplicates.Solution(nums);
+        int k = RemoveDuplicates.solution(nums);
 
         assertEquals(expectedNums.length, k, "返り値 k が正しくありません");
         for (int i = 0; i < k; i++) {
@@ -27,7 +27,7 @@ class RemoveDuplicatesTest {
         int[] nums = { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
         int[] expectedNums = { 0, 1, 2, 3, 4 };
 
-        int k = RemoveDuplicates.Solution(nums);
+        int k = RemoveDuplicates.solution(nums);
 
         assertEquals(expectedNums.length, k);
         for (int i = 0; i < k; i++) {
@@ -40,7 +40,7 @@ class RemoveDuplicatesTest {
     void testRemoveDuplicates_SingleElement() {
         int[] nums = { 1 };
 
-        int k = RemoveDuplicates.Solution(nums);
+        int k = RemoveDuplicates.solution(nums);
 
         assertEquals(1, k);
         assertEquals(1, nums[0]);
@@ -51,7 +51,7 @@ class RemoveDuplicatesTest {
     void testRemoveDuplicates_AllSame() {
         int[] nums = { 1, 1, 1, 1 };
 
-        int k = RemoveDuplicates.Solution(nums);
+        int k = RemoveDuplicates.solution(nums);
 
         assertEquals(1, k);
         assertEquals(1, nums[0]);
@@ -63,7 +63,7 @@ class RemoveDuplicatesTest {
         int[] nums = { 1, 2, 3 };
         int[] expectedNums = { 1, 2, 3 };
 
-        int k = RemoveDuplicates.Solution(nums);
+        int k = RemoveDuplicates.solution(nums);
 
         assertEquals(3, k);
         for (int i = 0; i < k; i++) {

@@ -15,7 +15,7 @@ import java.util.Map;
  */
 public class ContainsDuplicates {
 
-    public static boolean Solution(int[] nums) {
+    public static boolean solution(int[] nums) {
         Map<Integer, Integer> countMap = new HashMap<>();
 
         for (int i : nums) {

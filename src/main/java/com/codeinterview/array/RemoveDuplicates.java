@@ -11,7 +11,7 @@ package com.codeinterview.array;
  */
 public class RemoveDuplicates {
 
-    public static int Solution(int[] arr) {
+    public static int solution(int[] arr) {
         int prevIndex = 0;
 
         for (int i = 1; i < arr.length; i++) {

@@ -9,7 +9,7 @@ package com.codeinterview.array;
  */
 public class SingleNumber {
 
-    public static int Solution(int[] nums) {
+    public static int solution(int[] nums) {
 
         int result = 0;
         for (int i : nums) {

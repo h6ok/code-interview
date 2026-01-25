@@ -13,7 +13,7 @@ package com.codeinterview.array;
  */
 public class SellStock {
 
-    public static int Solution(int[] prices) {
+    public static int solution(int[] prices) {
         int total = 0;
         int start = 0;
         boolean increasing = true;

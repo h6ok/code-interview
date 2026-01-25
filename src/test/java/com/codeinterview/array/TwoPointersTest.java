@@ -13,7 +13,7 @@ class TwoPointersTest {
     void testIsSubsequence() {
         int[] left = { 1, 3, 5 };
         int[] right = { 1, 2, 3, 4, 5 };
-        assertTrue(TwoPointers.Solution(left, right), "1, 3, 5 は順番通りに含まれているのでtrue");
+        assertTrue(TwoPointers.solution(left, right), "1, 3, 5 は順番通りに含まれているのでtrue");
     }
 
     @Test
@@ -21,7 +21,7 @@ class TwoPointersTest {
     void testExactMatch() {
         int[] left = { 1, 2, 3 };
         int[] right = { 1, 2, 3 };
-        assertTrue(TwoPointers.Solution(left, right));
+        assertTrue(TwoPointers.solution(left, right));
     }
 
     @Test
@@ -29,7 +29,7 @@ class TwoPointersTest {
     void testWrongOrder() {
         int[] left = { 5, 3 };
         int[] right = { 1, 3, 5 };
-        assertFalse(TwoPointers.Solution(left, right), "順番が逆なのでfalseになるべき");
+        assertFalse(TwoPointers.solution(left, right), "順番が逆なのでfalseになるべき");
     }
 
     @Test
@@ -37,7 +37,7 @@ class TwoPointersTest {
     void testLeftLongerThanRight() {
         int[] left = { 1, 2, 3, 4 };
         int[] right = { 1, 2 };
-        assertFalse(TwoPointers.Solution(left, right));
+        assertFalse(TwoPointers.solution(left, right));
     }
 
     @Test
@@ -45,7 +45,7 @@ class TwoPointersTest {
     void testEmptyRight() {
         int[] left = { 1 };
         int[] right = {};
-        assertFalse(TwoPointers.Solution(left, right));
+        assertFalse(TwoPointers.solution(left, right));
     }
 
     @Test
@@ -53,6 +53,6 @@ class TwoPointersTest {
     void testEmptyLeft() {
         int[] left = {};
         int[] right = { 1, 2, 3 };
-        assertFalse(TwoPointers.Solution(left, right), "leftが空なのでFalseになるべき");
+        assertFalse(TwoPointers.solution(left, right), "leftが空なのでFalseになるべき");
     }
 }

@@ -17,7 +17,7 @@ import java.util.Arrays;
  */
 public class RotateArray {
 
-    public static void Solution(int[] nums, int k) {
+    public static void solution(int[] nums, int k) {
         int[] temp = Arrays.copyOf(nums, nums.length);
 
         for (int i = 0; i < temp.length; i++) {

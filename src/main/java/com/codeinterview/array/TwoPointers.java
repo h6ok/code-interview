@@ -2,7 +2,7 @@ package com.codeinterview.array;
 
 public class TwoPointers {
 
-    public static boolean Solution(int[] left, int[] right) {
+    public static boolean solution(int[] left, int[] right) {
 
         if (left.length == 0)
             return false;

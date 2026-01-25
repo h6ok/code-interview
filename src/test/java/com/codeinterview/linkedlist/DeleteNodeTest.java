@@ -1,8 +1,10 @@
 package com.codeinterview.linkedlist;
 
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
+
 import org.junit.jupiter.api.DisplayName;
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 
 class DeleteNodeTest {
 
@@ -17,7 +19,7 @@ class DeleteNodeTest {
         // 削除対象ノード (値が5のノード)
         ListNode nodeToDelete = head.next;
 
-        DeleteNode.Solution(nodeToDelete);
+        DeleteNode.solution(nodeToDelete);
 
         // 結果の検証: 4 -> 1 -> 9
         assertEquals(4, head.val);
@@ -36,7 +38,7 @@ class DeleteNodeTest {
 
         ListNode nodeToDelete = head.next.next;
 
-        DeleteNode.Solution(nodeToDelete);
+        DeleteNode.solution(nodeToDelete);
 
         // 結果の検証: 4 -> 5 -> 9
         assertEquals(4, head.val);

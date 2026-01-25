@@ -13,7 +13,7 @@ class ReverseStringTest {
         char[] s = { 'h', 'e', 'l', 'l', 'o' };
         char[] expected = { 'o', 'l', 'l', 'e', 'h' };
 
-        ReverseString.Solution(s);
+        ReverseString.solution(s);
 
         assertArrayEquals(expected, s, "文字列が正しく反転されていません");
     }
@@ -24,7 +24,7 @@ class ReverseStringTest {
         char[] s = { 'H', 'a', 'n', 'n', 'a', 'h' };
         char[] expected = { 'h', 'a', 'n', 'n', 'a', 'H' };
 
-        ReverseString.Solution(s);
+        ReverseString.solution(s);
 
         assertArrayEquals(expected, s);
     }
@@ -35,7 +35,7 @@ class ReverseStringTest {
         char[] s = { 'a' };
         char[] expected = { 'a' };
 
-        ReverseString.Solution(s);
+        ReverseString.solution(s);
 
         assertArrayEquals(expected, s);
     }
@@ -46,7 +46,7 @@ class ReverseStringTest {
         char[] s = {};
         char[] expected = {};
 
-        ReverseString.Solution(s);
+        ReverseString.solution(s);
 
         assertArrayEquals(expected, s);
     }
@@ -57,7 +57,7 @@ class ReverseStringTest {
         char[] s = { 'r', 'a', 'c', 'e', 'c', 'a', 'r' };
         char[] expected = { 'r', 'a', 'c', 'e', 'c', 'a', 'r' };
 
-        ReverseString.Solution(s);
+        ReverseString.solution(s);
 
         assertArrayEquals(expected, s);
     }

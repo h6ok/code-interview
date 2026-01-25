@@ -2,7 +2,7 @@ package com.codeinterview.sort;
 
 public class SelectionSort {
 
-    public static int[] Solution(int[] arr) {
+    public static int[] solution(int[] arr) {
 
         for (int i = 0; i < arr.length - 1; i++) {
             int minIndex = i;

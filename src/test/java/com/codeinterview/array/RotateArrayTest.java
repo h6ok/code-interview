@@ -14,7 +14,7 @@ class RotateArrayTest {
         int k = 3;
         int[] expected = { 5, 6, 7, 1, 2, 3, 4 };
 
-        RotateArray.Solution(nums, k);
+        RotateArray.solution(nums, k);
 
         assertArrayEquals(expected, nums, "配列が正しく右に3回転していません");
     }
@@ -26,7 +26,7 @@ class RotateArrayTest {
         int k = 0;
         int[] expected = { 1, 2, 3, 4 };
 
-        RotateArray.Solution(nums, k);
+        RotateArray.solution(nums, k);
 
         assertArrayEquals(expected, nums);
     }
@@ -38,7 +38,7 @@ class RotateArrayTest {
         int k = 4; // 1回転と同じ
         int[] expected = { 3, 1, 2 };
 
-        RotateArray.Solution(nums, k);
+        RotateArray.solution(nums, k);
 
         assertArrayEquals(expected, nums);
     }
@@ -50,7 +50,7 @@ class RotateArrayTest {
         int k = 5;
         int[] expected = { 1 };
 
-        RotateArray.Solution(nums, k);
+        RotateArray.solution(nums, k);
 
         assertArrayEquals(expected, nums);
     }

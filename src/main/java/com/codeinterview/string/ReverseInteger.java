@@ -2,7 +2,7 @@ package com.codeinterview.string;
 
 public class ReverseInteger {
 
-    public static int Solution(int x) {
+    public static int solution(int x) {
         boolean minus = x < 0;
 
         int base = minus ? -1 * x : x;

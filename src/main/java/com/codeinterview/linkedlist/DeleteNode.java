@@ -27,7 +27,7 @@ package com.codeinterview.linkedlist;
  */
 public class DeleteNode {
 
-    public static void Solution(ListNode node) {
+    public static void solution(ListNode node) {
 
         while (node.next.next != null) {
             node.val = node.next.val;

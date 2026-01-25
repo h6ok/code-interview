@@ -13,7 +13,7 @@ class TwoSumTest {
     void testTwoSum_Basic() {
         int[] nums = { 2, 7, 11, 15 };
         int target = 9;
-        int[] result = TwoSum.Solution(nums, target); // クラス名は適宜調整してください
+        int[] result = TwoSum.solution(nums, target); // クラス名は適宜調整してください
 
         // インデックス 0 と 1 を期待
         assertArrayEquals(new int[] { 0, 1 }, result);
@@ -24,7 +24,7 @@ class TwoSumTest {
     void testTwoSum_SameNumbers() {
         int[] nums = { 3, 3 };
         int target = 6;
-        int[] result = TwoSum.Solution(nums, target);
+        int[] result = TwoSum.solution(nums, target);
 
         assertArrayEquals(new int[] { 0, 1 }, result);
     }
@@ -34,7 +34,7 @@ class TwoSumTest {
     void testTwoSum_Negative() {
         int[] nums = { -1, -2, -3, -4, -5 };
         int target = -8;
-        int[] result = TwoSum.Solution(nums, target);
+        int[] result = TwoSum.solution(nums, target);
 
         // -3 + -5 = -8
         assertArrayEquals(new int[] { 2, 4 }, result);
@@ -42,10 +42,10 @@ class TwoSumTest {
 
     @Test
     @DisplayName("解が見つからないケース")
-    void testTwoSum_NoSolution() {
+    void testTwoSum_Nosolution() {
         int[] nums = { 1, 2, 3 };
         int target = 7;
-        int[] result = TwoSum.Solution(nums, target);
+        int[] result = TwoSum.solution(nums, target);
 
         assertEquals(0, result.length);
     }
