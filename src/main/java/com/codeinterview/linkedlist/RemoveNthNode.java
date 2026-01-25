@@ -1,36 +1,29 @@
 package com.codeinterview.linkedlist;
 
-import java.util.HashMap;
-import java.util.Map;
-
+/**
+ * Given the head of a linked list, remove the nth node from the end of the list
+ * and return its head.
+ */
 public class RemoveNthNode {
 
     public static ListNode solution(ListNode head, int n) {
-        Map<Integer, ListNode> nodeMap = new HashMap<>();
 
-        int length = 1;
-        ListNode node = head;
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+        ListNode fast = dummy;
+        ListNode slow = dummy;
 
-        while (node.next != null) {
-            nodeMap.put(length, node);
-            node = node.next;
-            length++;
-        }
-        nodeMap.put(length, node);
-
-        if (length == 1) {
-            return null;
+        for (int i = 0; i <= n; i++) {
+            fast = fast.next;
         }
 
-        int index = length - n + 1;
-        int prevIndex = length - n;
-
-        if (nodeMap.get(prevIndex) == null) {
-            head = nodeMap.get(index).next;
-            return head;
+        while (fast != null) {
+            fast = fast.next;
+            slow = slow.next;
         }
 
-        nodeMap.get(prevIndex).next = nodeMap.get(index).next;
-        return head;
+        slow.next = slow.next.next;
+        return dummy.next;
+
     }
 }
